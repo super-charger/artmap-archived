@@ -26,7 +26,7 @@ export default function AllIconsPage() {
             {iconFiles.map((file, index) => (
                 <div key={index}>
                     <Image src={file} alt={path.basename(file)} width={50} height={50}/>
-                    <p>{path.basename(file)}</p>
+                    <p>{path.dirname(file)}/{path.basename(file)}</p>
                 </div>
             ))}
         </div>
