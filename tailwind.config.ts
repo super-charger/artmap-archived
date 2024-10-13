@@ -38,7 +38,7 @@ const config: Config = {
             backgroundImage: {
                 'gradient0': 'linear-gradient(to right, #000000, #757C86)',
                 'gradient1': 'linear-gradient(to right, #5C61DE, #7F21F7)',
-                'gradient2': 'linear-gradient(to right,#7F21F7,#AC7BFB)',
+                'gradient2': 'linear-gradient(to right, #7F21F7, #AC7BFB)',
             },
         },
     },
