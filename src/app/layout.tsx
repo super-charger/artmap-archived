@@ -1,5 +1,5 @@
 import type {Metadata} from "next";
-import "./globals.css";
+import "../styles/globals.css";
 import {Noto_Sans_KR} from '@next/font/google';
 
 const notoSansKR = Noto_Sans_KR({

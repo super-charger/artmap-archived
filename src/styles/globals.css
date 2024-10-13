@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.custom-extra-large-bold {
+    font-size: 1.625rem;
+    line-height: 2.375rem;
+    font-weight: bold;
+}
+
+.custom-title-large-bold {
+    font-weight: bold;
+    font-size: 1.25rem; /* 20px */
+    line-height: 1.8125rem; /* 29px */
+}
+
+.custom-title-bold {
+    font-weight: bold;
+    font-size: 1rem; /* 16px */
+    line-height: 1.75rem; /* 28px */
+}
+
+.custom-title-small-bold {
+    font-weight: bold;
+    font-size: 0.75rem; /* 12px */
+    line-height: 1.125rem; /* 18px */
+}
+
+.custom-extra-large {
+    font-size: 1.625rem;
+    line-height: 2.375rem;
+}
+
+.custom-text-large {
+    font-size: 1.25rem; /* 20px */
+    line-height: 1.8125rem; /* 29px */
+}
+
+.custom-text {
+    font-size: 1rem; /* 16px */
+    line-height: 1.75rem; /* 28px */
+}
+
+.custom-text-small {
+    font-size: 0.75rem; /* 12px */
+    line-height: 1.125rem; /* 18px */
+}
+
+.custom-button {
+    font-weight: bold;
+    font-size: 1rem; /* 16px */
+    line-height: 1.75rem; /* 28px */
+}
+
+.custom-button-small {
+    font-weight: bold;
+    font-size: 0.75rem; /* 12px */
+    line-height: 1.125rem; /* 18px */
+}
+
+.custom-text-active {
+    font-size: 1rem; /* 16px */
+    line-height: 1.75rem; /* 28px */
+    text-decoration: underline;
+}
+
+.custom-text-small-active {
+    font-size: 0.75rem; /* 12px */
+    line-height: 1.125rem; /* 18px */
+    text-decoration: underline;
+}
