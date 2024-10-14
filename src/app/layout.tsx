@@ -1,11 +1,5 @@
 import type {Metadata} from "next";
 import "../styles/globals.css";
-import {Noto_Sans_KR} from '@next/font/google';
-
-const notoSansKR = Noto_Sans_KR({
-    subsets: ['latin'],
-    weight: ['400', '700'], // Specify the weights you need
-});
 
 export const metadata: Metadata = {
     title: "Create Next App",
@@ -20,7 +14,6 @@ export default function RootLayout({
     return (
         <html lang="kr">
         <body
-            className={notoSansKR.className}
         >
         {children}
         </body>
