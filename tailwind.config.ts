@@ -5,8 +5,8 @@ import tokenStyles from './src/shared/lib/tokens'
 
 const config: Config = {
   mode: 'jit',
-  safelist: ['mobile-title-small', 'mobile-title-large'],
   content: [
+    // TODO: 수정필요
     './src/features/**/*.{js,ts,jsx,tsx,mdx}',
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
