@@ -4,7 +4,6 @@ import plugin from 'tailwindcss/plugin'
 import tokenStyles from './src/shared/lib/tokens'
 
 const config: Config = {
-  mode: 'jit',
   content: [
     // TODO: 수정필요
     './src/features/**/*.{js,ts,jsx,tsx,mdx}',
