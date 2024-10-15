@@ -1,0 +1,55 @@
+{
+  // TypeScript 코드를 파싱하기 위한 파서 설정
+  "parser": "@typescript-eslint/parser",
+  "extends": [
+    // Next.js의 Core Web Vitals 관련 규칙
+    "next/core-web-vitals",
+    // ESLint의 권장 규칙
+    "eslint:recommended",
+    // TypeScript 관련 권장 규칙
+    "plugin:@typescript-eslint/recommended",
+    // React Hooks 관련 권장 규칙
+    "plugin:react-hooks/recommended",
+    // Tailwind CSS 관련 권장 규칙
+    "plugin:tailwindcss/recommended",
+    // Prettier와 충돌하는 ESLint 규칙을 비활성화
+    "prettier"
+  ],
+  // 사용할 플러그인 목록
+  "plugins": ["@typescript-eslint", "react-hooks", "tailwindcss"],
+  // 커스텀 규칙 설정
+  "rules": {
+    // 중첩 깊이를 최대 4로 제한
+    "max-depth": ["error", 4],
+    // import/export 문제에 대해 경고
+    "import/export": "warn",
+    // import 문에 대한 권장 규칙
+    "import/order": "off",
+    // React 17 이상에서는 불필요한 import React 문을 제거
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/no-require-imports": "off",
+    /** https://runebook.dev/ko/docs/eslint/rules/no-unused-vars **/
+    "@typescript-eslint/no-unused-vars": [
+      "error",
+      {
+        "vars": "all", // 모든 변수에 대해 사용 여부를 검사
+        "varsIgnorePattern": "^_", // _로 시작하는 변수는 사용하지 않아도 무시
+        "args": "after-used", // 사용되지 않은 매개변수 에러
+        "argsIgnorePattern": "^_", // _로 시작하는 매개변수는 사용하지 않아도 무시
+        "caughtErrors": "none",
+        "reportUsedIgnorePattern": false // 무시 패턴(ignore pattern)에 의해 무시된 변수가 실제로 사용될 때 이를 보고할지 여부
+      }
+    ],
+    // Hooks의 규칙을 강제, 의존성 배열 체크
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn"
+
+  },
+  "settings": {
+    "import/resolver": {
+      // TypeScript 사용 시 import 경로 해석을 위한 설정
+      "typescript": true,
+      "node": true
+    }
+  }
+}
