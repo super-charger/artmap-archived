@@ -13,7 +13,7 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="kr">
-        <body className={"bg-gray-100"}
+        <body
         >
         {children}
         </body>
